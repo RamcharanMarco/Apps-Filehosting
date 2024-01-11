@@ -1,0 +1,49 @@
+.login{
+    height: 85vh;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: purple;
+}
+
+.login p{
+    color: grey;
+}
+
+.login *{
+    margin: 5px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login input, .login button{
+    height: 35px;
+    width: 300px;
+}
+
+.login input{
+    border: 1px solid purple;
+    outline: none;
+    padding: 10px;
+}
+
+.login button{
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.login form *{
+    margin: 5px;
+}

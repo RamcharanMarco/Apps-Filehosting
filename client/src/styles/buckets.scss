@@ -1,0 +1,72 @@
+.buckets{
+    height: 85vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buckets button{
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.buckets .create{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.buckets .create *{
+    margin: 10px;
+}
+
+.bucketlist{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+.bucketlist a{
+    background-color: transparent;
+    color: black;
+}
+
+.bucketlist a:hover{
+    text-decoration: underline;
+}
+
+.buckets input, .buckets button{
+    width: 400px;
+    height: 35px;
+}
+
+.buckets input{
+    padding: 10px;
+    outline: none;
+}
+
+.bucketlist .bucketlist-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.singlebucket{
+    background-color: red;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}

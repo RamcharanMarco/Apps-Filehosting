@@ -1,0 +1,35 @@
+.settings{
+    background-color: burlywood;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.settings .mod-changePwd{
+    height: 100vh;
+    width: 100%;
+    background: azure;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.settings .mod-deleteAcc{
+    height: 100vh;
+    width: 100%;
+    background: azure;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

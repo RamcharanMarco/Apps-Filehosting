@@ -1,0 +1,22 @@
+.mainNavbar{
+    height: 15vh;
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.mainNavbar h1{
+    color: purple;
+}
+
+.mainNavbar .links{
+        display: flex;
+}
+
+.mainNavbar .links *{
+    margin: 10px;
+    color: black;
+    background-color: transparent;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>layout 2</h1>
+
+<h1>id <%= id %></h1>
+<h1>name <%= name %></h1>
+<p>name <%= surname %></p>
+<p>age <%= age %></p>
+<p>location <%= location %></p>
+<ul>
+    <% users.forEach(function(item,index){ %>
+            <p><%= item %></p> 
+        <% }) %>
+  </ul>
+  <ul>
+    <% links.forEach(function(item,index){ %>
+            <a href=<%= item.link %>><%= item.title %></a> 
+        <% }) %>
+  </ul>
+</body>
+</html>

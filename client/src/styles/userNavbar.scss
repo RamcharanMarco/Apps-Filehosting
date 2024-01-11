@@ -1,0 +1,23 @@
+.userNavbar{
+    height: 15vh;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:20px ;
+}
+
+.userNavbar .links{
+    display: flex;
+    align-items: center;
+}
+
+.userNavbar .links *{
+    margin: 10px;
+    width: fit-content;
+}
+
+.userNavbar .links a{
+  color: black;
+  background-color: transparent;
+}

@@ -1,0 +1,28 @@
+.dashboard{
+    height: 85vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dashboard div{
+    display: flex;
+    flex-direction: column;  
+}
+
+.dashboard button,a{
+    color: white;
+    background-color: black;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.dashboard div *{
+    margin: 20px; 
+}

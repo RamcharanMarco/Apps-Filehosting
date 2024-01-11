@@ -1,0 +1,88 @@
+geta file stats
+const fs = require('fs');
+
+fs.stat('/Users/joe/test.txt', (err, stats) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+
+  stats.isFile(); // true
+  stats.isDirectory(); // false
+  stats.isSymbolicLink(); // false
+  stats.size; // 1024000 //= 1MB
+});
+
+
+filepahts
+const notes = '/users/joe/notes.txt';
+
+path.dirname(notes); // /users/joe
+path.basename(notes); // notes.txt
+path.extname(notes); // .txt
+
+
+
+const name = 'joe';
+path.join('/', 'users', name, 'notes.txt'); // '/users/joe/notes.txt'
+
+path.resolve('joe.txt'); // '/Users/joe/joe.txt' if run from my home folder
+
+
+read file with node
+const fs = require('fs');
+
+fs.readFile('/Users/joe/test.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(data);
+});
+
+
+working with folders
+creata a folder
+const fs = require('fs');
+
+const folderName = '/Users/joe/test';
+
+try {
+  if (!fs.existsSync(folderName)) {
+    fs.mkdirSync(folderName);
+  }
+} catch (err) {
+  console.error(err);
+}
+
+rename folder
+const fs = require('fs');
+
+fs.rename('/Users/joe', '/Users/roger', err => {
+  if (err) {
+    console.error(err);
+  }
+  // done
+});
+
+
+remove folder and contents
+const fs = require('fs');
+
+fs.rm(dir, { recursive: true, force: true }, err => {
+  if (err) {
+    throw err;
+  }
+
+  console.log(`${dir} is deleted!`);
+});
+
+
+get the file extension
+const path = require('path')
+
+path.extname('index.html') // .html
+path.extname('name.png')   // .png
+path.extname('name.of.months.pdf') // .pdf
+
+

@@ -1,0 +1,39 @@
+const express = require('express')
+const router = express.Router()
+const {deleteFile,getFiles} = require('../controllers/fileController')
+
+router.get('/:id', getFiles)
+
+router.delete('/', deleteFile)
+
+
+const storage = multer.diskStorage({
+    destination: function(req, file, cb) {
+        cb(null, 'files');
+    },
+    filename: function(req, file, cb) {   
+        cb(null,uuidv4() + '-' + Date.now() + path.extname(file.originalname));
+    }
+});
+
+let upload = multer({ storage});
+
+router.post('/',upload.array('lalalalal'), async(req, res) => {
+    const user_id = req.user._id
+    const url = req.protocol + '://' + req.get('host')
+    const photoslist = req.files
+    const imagepathslist = []
+    const name = photosList.forEach((img) => imagepathslist.push(url+'/images/'+img.filename));
+try{
+    const resume = await Photo.create({photos:imagepathslist})
+    res.status(200).json(resume)
+    console.log(resume)
+}catch(error){
+    res.status(400).json({error : error.message})
+    console.log(error)
+}
+});
+
+
+
+module.exports = router
